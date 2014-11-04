@@ -1,0 +1,21 @@
+{
+  "name": "dreiser",
+  "title": "dreiser.co",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "nvm use 0.8.26;grunt deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-cli": "~0.1.6",
+    "stylus": "~0.32.1",
+    "nib": "~1.0.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-stylus": "~0.5.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.7.0"
+  }
+}

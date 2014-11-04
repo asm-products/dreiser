@@ -1,0 +1,26 @@
+/*!
+ * magelan navigation
+ */
+nav[data-magellan-expedition="fixed"]
+  background-color: $menu-color;
+  border-bottom: 2px solid $bg-color;
+
+[data-magellan-expedition] .sub-nav
+  & dd
+  & dt
+  & li
+    line-height: 2.2rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+    & a
+      text-transform: uppercase;
+      color: $white;
+    &.active
+      line-height: 2.2rem;
+      & a
+        background: none;
+        color: $link-color;
+        padding: inherit;
+  & .button
+    margin: 0;
