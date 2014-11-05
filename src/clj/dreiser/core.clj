@@ -40,7 +40,6 @@
       wrap-flash
       wrap-session
       (wrap-resource "public")
-
       handler/site))
 
 
