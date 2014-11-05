@@ -1,5 +1,7 @@
 # Dreiser
 
+[![Dependencies Status](http://jarkeeper.com/asm-products/dreiser/status.png)](http://jarkeeper.com/asm-products/dreiser)
+
 ## Find grammar and spelling mistakes everywhere
 
 This is a product being built by the Assembly community. You can help push this idea forward by visiting [https://assembly.com/dreiser](https://assembly.com/dreiser).
