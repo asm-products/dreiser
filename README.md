@@ -6,6 +6,11 @@
 
 This is a product being built by the Assembly community. You can help push this idea forward by visiting [https://assembly.com/dreiser](https://assembly.com/dreiser).
 
+## Tech Stack
+
+We use Clojure and PostgreSQL on server-side, ClojureScript and Om on the client-side.
+Dreiser is web based application with traditional architecture.
+
 
 ## Other tools
 
