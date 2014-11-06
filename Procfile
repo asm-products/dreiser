@@ -1,1 +1,1 @@
-web: lein with-profile production trampoline run -m dreiser.core $PORT
+web: lein with-profile prod trampoline run -m dreiser.core $PORT
