@@ -2,3 +2,4 @@ target/
 .lein-env
 .lein-failures
 .nrepl-port
+.lein-repl-history
