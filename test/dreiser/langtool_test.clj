@@ -11,6 +11,7 @@
       (is (= (:shortMessage (first checks)) "Spelling mistake"))
       (is (= (:message (first checks)) "Possible spelling mistake found"))
       (is (= (count (:suggestedReplacements (first checks))) 9))
+      (is (= (:line (first checks)) 0))
       (is (= (:offset (first checks)) 0))
       (is (= (:toPos (first checks)) 4))
       (is (= (:fromPos (first checks)) 0))))
@@ -22,6 +23,7 @@
       (is (= (:shortMessage (first checks)) "Spelling mistake"))
       (is (= (:message (first checks)) "Possible spelling mistake found"))
       (is (= (count (:suggestedReplacements (first checks))) 9))
+      (is (= (:line (first checks)) 0))
       (is (= (:offset (first checks)) 0))
       (is (= (:toPos (first checks)) 4))
       (is (= (:fromPos (first checks)) 0))))
@@ -33,7 +35,21 @@
       (is (= (:shortMessage (first checks)) "Three successive sentences begin with the same word."))
       (is (= (:message (first checks)) "Three successive sentences begin with the same word. Reword the sentence or use a thesaurus to find a synonym."))
       (is (= (count (:suggestedReplacements (first checks))) 0))
+      (is (= (:line (first checks)) 0))
       (is (= (:offset (first checks)) 38))
       (is (= (:toPos (first checks)) 41))
-      (is (= (:fromPos (first checks)) 38)))))
+      (is (= (:fromPos (first checks)) 38))))
+  (testing "Find one problem on the second line"
+    (let [result (ltool/check "The morning is good.\n Helo Anton." "BritishEnglish")
+          checks (:checks result)]
+      (is (= (:value result) "The morning is good.\n Helo Anton."))
+      (is (= (count checks) 1))
+      (is (= (:shortMessage (first checks)) "Spelling mistake"))
+      (is (= (:message (first checks)) "Possible spelling mistake found"))
+      (is (= (count (:suggestedReplacements (first checks))) 8))
+      (is (= (:line (first checks)) 1))
+      (is (= (:offset (first checks)) 22))
+      (is (= (:toPos (first checks)) 26))
+      (is (= (:fromPos (first checks)) 22)))))
+
 
