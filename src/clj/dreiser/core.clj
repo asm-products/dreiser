@@ -3,6 +3,7 @@
   (:require [ring.middleware.resource :refer [wrap-resource]]
             [ring.middleware.flash :refer [wrap-flash]]
             [ring.middleware.session :refer [wrap-session]]
+            [ring.adapter.jetty :refer [run-jetty]]
             [cemerick.friend :refer [authenticate]]
             [compojure.handler :as handler]
             [shopify.friend :as friend]
@@ -65,3 +66,6 @@
 
 
 ;(init)
+
+
+(defn -main [port] (run-jetty app {:port (Integer. port)}))

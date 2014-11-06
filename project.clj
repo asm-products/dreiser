@@ -34,7 +34,6 @@
             [lein-environ "1.0.0"]
             [lein-beanstalk "0.2.7"]
             [lein-cljsbuild "1.0.3"]]
-
   :ragtime {:migrations ragtime.sql.files/migrations
             :database "jdbc:postgresql://localhost/dreiser"}
   :ring {:handler dreiser.core/app
