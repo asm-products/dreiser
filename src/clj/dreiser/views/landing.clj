@@ -18,7 +18,7 @@
       ]
      [:ul.title-area
       [:li.logo
-       [:a {:href "/"} "dreiser"]]]
+       [:a {:href "/"} "Dreiser"]]]
      ]])
 
 
