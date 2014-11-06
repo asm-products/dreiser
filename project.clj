@@ -22,7 +22,6 @@
                  [hiccup "1.0.5"]
                  [overtone/at-at "1.2.0"]
                  [cheshire "5.3.1"]
-                 [hickory "0.5.4"]
                  [amazonica "0.2.29"]
                  [lein-light-nrepl "0.0.19"]
                  [org.clojure/clojurescript "0.0-2202"]

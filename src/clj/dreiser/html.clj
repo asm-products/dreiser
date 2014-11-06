@@ -1,6 +1,5 @@
 (ns dreiser.html
-  (:use [hickory.core]
-        [hiccup.core :only (html)]))
+  (:use [hiccup.core :only (html)]))
 
 (defn hiccup->html [hc]
   (clojure.string/join
