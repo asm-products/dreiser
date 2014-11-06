@@ -17,6 +17,7 @@
       (include-css "https://fonts.googleapis.com/css?family=Playfair+Display:700,700italic")
       (include-css "https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300")
       (include-js "/js/vendor.js")
+      (include-js "https://assets.helpful.io/assets/widget.js")
       (cv/ga)]
     [:body
       (cv/fixed-nav customer)

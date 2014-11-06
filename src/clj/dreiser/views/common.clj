@@ -13,7 +13,7 @@
       [:dd
        [:a {:href "/account"} (:shop_owner customer)]]
       [:dd
-       [:a {:href "/support"} "Support"]]
+       [:a {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]]
       [:dd
        [:a {:href "/logout"} "Logout"]]]
      [:ul.title-area

@@ -7,21 +7,6 @@
 
 
 
-(defn fixed-nav []
-  [:nav {:data-magellan-expedition "fixed"}
-    [:div.row.clearfix
-     [:dl.sub-nav.right
-      [:dd {:data-magellan-arrival "pricing"}
-       [:a {:href "#pricing"} "Pricing"]]
-      [:dd
-       [:a.button.tiny.login-button {:href "/login"} "Log In"]]
-      ]
-     [:ul.title-area
-      [:li.logo
-       [:a {:href "/"} "Dreiser"]]]
-     ]])
-
-
 (defn index []
   (html5 {:lang "en"}
     [:head
