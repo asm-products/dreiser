@@ -18,6 +18,7 @@ Dreiser is web based application with traditional architecture.
   * http://www.afterthedeadline.com/
   * http://www.elto.com/blog/4-essential-plugins-for-wordpress-maintenance/
   * http://www.paperrater.com/page/developers-api
+  * http://textalytics.com/
 
 ### How Assembly Works
 
