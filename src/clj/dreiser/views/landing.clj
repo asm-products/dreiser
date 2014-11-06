@@ -32,6 +32,7 @@
       [:link {:href "/favicon.png" :rel "shortcut icon"}]
      (include-css "/css/app.css")
      (include-js "/js/vendor.js")
+     (include-js "https://assets.helpful.io/assets/widget.js")
      (include-css "https://fonts.googleapis.com/css?family=Playfair+Display:700,700italic")
      (include-css "https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300")
      (include-css "https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
@@ -41,6 +42,7 @@
      [:div.row.hero.block
       [:img {:src "/hero.jpg"}]
       [:a.button.tiny.login-button {:href "/login"} "Log In"]
+      [:a.button.tiny.contact-button {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]
       [:div.logo-block
        [:p.big-logo "Dreiser"]
        [:p "Proofread your texts"]]]
@@ -81,6 +83,5 @@
           [:img {:src "/screen1.png"}]]]
       ]
      (cv/all-pricing)
-     (cv/about)
      (cv/footer)]))
 

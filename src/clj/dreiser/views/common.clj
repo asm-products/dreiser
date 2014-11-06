@@ -71,23 +71,6 @@
      [:i.fa.fa-map-marker]
      [:span "61 Praed Street, dept 400, London"]]])
 
-(defn about []
-  [:div.main-footer.orange.block
-   [:div.row
-    [:div.columns.large-4.large-offset-0.medium-6.medium-offset-3.small-12.fly-in-animation.fadeInUp
-     [:h3.text-uppercase "About"]
-     [:p "We care about quality of your content. Our goal is to find typos in your texts and make the best suggestions about quality of the content."]
-     ]
-    [:div.columns.large-4.large-offset-0.medium-6.medium-offset-3.small-12.fly-in-animation.fadeInUp
-     [:h3.text-uppercase "Contact us"]
-     (contact-info)
-     ]
-    ]]
-  ;[:footer.text-center
-  ; [:p "Copyright 2014. Hashobject Ltd"]
-  ; ]
-  )
-
 
 (defn ga []
   [:script
