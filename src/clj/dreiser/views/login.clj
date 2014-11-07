@@ -35,9 +35,9 @@
      ]
     [:body
      (fixed-nav)
-     [:section.pricing-block.white-block
+     [:section.pricing-block.white-block.container
        [:div.row
-        [:div.text-center.columns.small-8.small-centered
+        [:div.col-xs-12.col-md-8.col-md-offset-2
          [:h3 "Please login with your Shopify account"]
          [:p "Enter url of you Shopify shop and press Log In"]
          (cv/login-form)]]]]))
