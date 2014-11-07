@@ -8,18 +8,15 @@
 
 
 (defn fixed-nav []
-  [:nav {:data-magellan-expedition "fixed"}
-    [:div.row.clearfix
-     [:dl.sub-nav.right
-      [:dd {:data-magellan-arrival "pricing"}
-       [:a {:href "/#pricing"} "Pricing"]]
-      [:dd
-       [:a.button.tiny.dark-blue-button {:href "/login"} "Log In"]]
-      ]
-     [:ul.title-area
-      [:li.logo
-       [:a {:href "/"} "Dreiser"]]]
-     ]])
+  [:nav.navbar.navbar-inverse
+    [:div.navbar-header
+     [:a.navbar-brand {:href "/"} "Dreiser"]]
+    [:div.navbar-collapse.collapse.navbar-inverse-collapse
+      [:ul.nav.navbar-nav.navbar-right
+        [:li
+         [:a {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]]
+        [:li
+         [:a {:href "/login"} "Login"]]]]])
 
 
 (defn index []

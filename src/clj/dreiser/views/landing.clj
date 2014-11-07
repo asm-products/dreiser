@@ -21,38 +21,39 @@
      (include-css "https://fonts.googleapis.com/css?family=Playfair+Display:700,700italic")
      (include-css "https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300")
      (include-css "https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+     (include-js "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js")
      (cv/ga)
      ]
     [:body.landing-page
      [:div.row.hero.block
       [:img {:src "/hero.jpg"}]
-      [:a.button.tiny.login-button {:href "/login"} "Log In"]
-      [:a.button.tiny.contact-button {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]
+      [:a.btn.btn-primary.btn-sm.login-button {:href "/login"} "Log In"]
+      [:a.btn.btn-primary.btn-sm.contact-button {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]
       [:div.logo-block
        [:p.big-logo "Dreiser"]
        [:p "Proofread your texts"]]]
      [:div.row.orange.block
-      [:header.text-center.columns.small-12
+      [:header.col-md-12.center-block
         [:h2 "How it works"]]
-      [:div.columns.text-center.small-12.medium-8.medium-centered.small-centered
+      [:div.col-xs-12.col-md-8
           [:p "<strong>Dreiser</strong> is service for proofreading you text content.
            We can scan and find potential grammar & spelling
            mistakes in your products descriptions, blog posts and web pages."]
           [:p "Every day we will check all your content and send report with potential problems via email."]]]
      [:div.row.white.block
-      [:header.text-center.columns.small-12
+      [:header.col-xs-12
        [:h2 "Why do you need it"]]
-      [:div.columns.text-center.small-12.medium-8.medium-centered.small-centered
+      [:div.col-xs-12.col-md-8
        [:ul
         [:li "Avoid stupid mistakes in your text. Customers like quality.
          Everything you do should be perfect: your products, your logo, payment experience and ... text on your site and blog."]
         [:li "Mistakes in text may cause some problem with ranking in Google. Customers wouldn't be able to find your products because of the simple typos"]]]]
      [:div.light-grey.block
        [:div.row
-         [:header.text-center.columns.small-12
+         [:header.col-xs-12
            [:h2 "How to use it"]
            [:p "Get first check result just in few minutes"]]
-         [:div.columns.small-12.medium-8.medium-offset-2.large-6.large-offset-0
+         [:div.col-xs-12.col-md-8
            [:ul
             [:li
              [:h4 "Create account"]
@@ -64,7 +65,7 @@
               [:h4 "Press Start button"]
               [:p "First check result will be availbe just in few minutes. You will receive reports from us couple times per week on you email."]]
           ]]
-         [:div.columns.large-6.show-for-large-up
+         [:div.col-md-6
           [:img {:src "/screen1.png"}]]]
       ]
      (cv/all-pricing)

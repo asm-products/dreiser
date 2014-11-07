@@ -23,13 +23,13 @@
      ]
     [:body
      (cv/fixed-nav customer)
-     [:section.white-block
+     [:section.container
        [:div.row
-         [:section.columns.small-8.small-centered
+         [:section.col-xs-12.col-md-8.center-block
            [:h3 "Settings"]
-           [:form {:method "POST" :action "/account"}
+           [:form {:method "POST" :action "/account" :role "form"}
              [:div.row
-               [:div.large-12.columns
+               [:div.col-md-12
                  [:label "Change language"
                    [:select {:name "language"}
                    (for [lang langs/langs]
@@ -37,15 +37,15 @@
                        [:option {:value (key lang) :selected ""} (:name (val lang))]
                        [:option {:value (key lang)} (:name (val lang))]))
                    ]]]
-              [:div.large-12.columns.clearfix
+              [:div.col-md-12
                 [:button.button.right "Save"]]
               ]]
          ]]
         [:div.row
-         [:section.columns.small-8.small-centered
+         [:section.col-xs-12.col-md-8.center-block
           [:p "You are on the " (:plan customer) " plan."]
           [:p "Contact us via email "
-           [:a {:href "mailto:team@hashobject.com"} "team@hashobject.com"]
+           [:a {:href "mailto:team@dreiser.co"} "team@dreiser.co"]
            " if you want to change your plan or cancel your account."]
           ]]
       ]]))

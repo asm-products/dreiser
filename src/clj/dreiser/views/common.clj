@@ -7,19 +7,17 @@
 
 
 (defn fixed-nav [customer]
-  [:nav {:data-magellan-expedition "fixed"}
-    [:div.row.clearfix
-     [:dl.sub-nav.right
-      [:dd
-       [:a {:href "/account"} (:shop_owner customer)]]
-      [:dd
-       [:a {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]]
-      [:dd
-       [:a {:href "/logout"} "Logout"]]]
-     [:ul.title-area
-      [:li.logo
-       [:a {:href "/"} "Dreiser"]]]
-     ]])
+  [:nav.navbar.navbar-inverse
+    [:div.navbar-header
+     [:a.navbar-brand {:href "/"} "Dreiser"]]
+    [:div.navbar-collapse.collapse.navbar-inverse-collapse
+      [:ul.nav.navbar-nav.navbar-right
+        [:li
+         [:a {:href "/account"} (:shop_owner customer)]]
+        [:li
+         [:a {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]]
+        [:li
+         [:a {:href "/logout"} "Logout"]]]]])
 
 
 (defn pricing [id pname pprice features]
@@ -83,9 +81,10 @@
   ga('send', 'pageview');"])
 
 (defn login-form []
-  [:form.login-form {:action "/auth/shopify"}
-    [:input {:type "text" :name "shop" :placeholder "yourshop.myshopify.com" :value ""}]
-    [:div.clearfix
-      [:button.button.right(:type "submit") "Log In"]]])
+  [:form.login-form {:action "/auth/shopify" :role "form"}
+    [:div.form-group
+      [:input {:type "text" :name "shop" :placeholder "yourshop.myshopify.com" :value ""}]
+      [:div.clearfix
+        [:button.btn.btn-primary.right(:type "submit") "Log In"]]]])
 
 
