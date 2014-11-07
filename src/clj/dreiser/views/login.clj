@@ -8,18 +8,15 @@
 
 
 (defn fixed-nav []
-  [:nav {:data-magellan-expedition "fixed"}
-    [:div.row.clearfix
-     [:dl.sub-nav.right
-      [:dd {:data-magellan-arrival "pricing"}
-       [:a {:href "/#pricing"} "Pricing"]]
-      [:dd
-       [:a.button.tiny.dark-blue-button {:href "/login"} "Log In"]]
-      ]
-     [:ul.title-area
-      [:li.logo
-       [:a {:href "/"} "Dreiser"]]]
-     ]])
+  [:nav.navbar.navbar-inverse
+    [:div.navbar-header
+     [:a.navbar-brand {:href "/"} "Dreiser"]]
+    [:div.navbar-collapse.collapse.navbar-inverse-collapse
+      [:ul.nav.navbar-nav.navbar-right
+        [:li
+         [:a {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]]
+        [:li
+         [:a {:href "/login"} "Login"]]]]])
 
 
 (defn index []
@@ -38,9 +35,9 @@
      ]
     [:body
      (fixed-nav)
-     [:section.pricing-block.white-block
+     [:section.pricing-block.white-block.container
        [:div.row
-        [:div.text-center.columns.small-8.small-centered
+        [:div.col-xs-12.col-md-8.col-md-offset-2
          [:h3 "Please login with your Shopify account"]
          [:p "Enter url of you Shopify shop and press Log In"]
          (cv/login-form)]]]]))

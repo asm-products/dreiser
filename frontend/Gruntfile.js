@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          '../resources/public/css/app.css': ['styl/app.styl', 'styl/dreiser.styl']
+          '../resources/public/css/app.css': ['styl/app.styl']
         }
       }
     },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         files: {
-          '../resources/public/js/vendor.js': ['js/jquery.js', 'js/foundation.min.js', 'js/nprogress.js'],
+          '../resources/public/js/vendor.js': ['js/jquery.js', 'js/nprogress.js'],
         }
       }
     },

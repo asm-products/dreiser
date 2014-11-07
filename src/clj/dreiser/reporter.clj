@@ -13,14 +13,11 @@
   (if (empty? suggestions)
     ""
     (let [suggs (clojure.string/split suggestions #",")]
-      (dreiser.html/hiccup->html (for [s suggs] [:li s])))))
+      (dreiser.html/hiccup->html (for [s suggs] [:p.suggestion s])))))
 
 
 (defn error-html [error-id wrong-word error-msg suggs-html]
-  [[:span.check-wrong-word {:data-dropdown error-id} wrong-word]
-    [:div.f-dropdown.content {:id error-id :data-dropdown-content ""}
-     [:h4 error-msg]
-     (if (> (count suggs-html) 0) [:ul suggs-html])]])
+  [[:span.check-wrong-word {:data-toggle "popover" :tabindex 0 :data-trigger "focus" :title error-msg :data-content (h/hiccup->html suggs-html)} wrong-word]])
 
 (defn wrap-error [wrong-word suggestions error-msg]
   (let [error-id (str "drop-" (utils/uuid))

@@ -23,29 +23,31 @@
      ]
     [:body
      (cv/fixed-nav customer)
-     [:section.white-block
+     [:section.container
        [:div.row
-         [:section.columns.small-8.small-centered
-           [:h3 "Settings"]
-           [:form {:method "POST" :action "/account"}
-             [:div.row
-               [:div.large-12.columns
-                 [:label "Change language"
-                   [:select {:name "language"}
-                   (for [lang langs/langs]
-                     (if (= (:language customer) (key lang))
-                       [:option {:value (key lang) :selected ""} (:name (val lang))]
-                       [:option {:value (key lang)} (:name (val lang))]))
-                   ]]]
-              [:div.large-12.columns.clearfix
-                [:button.button.right "Save"]]
+         [:section.col-xs-12.col-md-8.col-md-offset-2
+           [:form.form-horizontal {:method "POST" :action "/account" :role "form"}
+             [:fieldset
+               [:legend "Settings"]
+               [:div.form-group
+                 [:label.col-lg-2.control-label {:for "language"} "Language"]
+                 [:div.col-lg-10
+                    [:select.form-control {:name "language"}
+                     (for [lang langs/langs]
+                       (if (= (:language customer) (key lang))
+                         [:option {:value (key lang) :selected ""} (:name (val lang))]
+                         [:option {:value (key lang)} (:name (val lang))]))
+                     ]]]
+              [:div.form-group
+                [:div.col-lg-10.col-lg-offset-2
+                 [:button.btn.btn-primary "Save"]]]
               ]]
          ]]
         [:div.row
-         [:section.columns.small-8.small-centered
+         [:section.col-xs-12.col-md-8.col-md-offset-2
           [:p "You are on the " (:plan customer) " plan."]
           [:p "Contact us via email "
-           [:a {:href "mailto:team@hashobject.com"} "team@hashobject.com"]
+           [:a {:href "mailto:team@dreiser.co"} "team@dreiser.co"]
            " if you want to change your plan or cancel your account."]
           ]]
       ]]))

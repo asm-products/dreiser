@@ -24,9 +24,9 @@
      ]
     [:body
      (cv/fixed-nav customer)
-     [:section.white-block
+     [:section.white-block.container
        [:div.row
-         [:section.columns.small-12.text-center
+         [:section.col-xs-12.col-md-8.col-md-offset-2
           [:h3.text-uppercase "Contact us"]
           (cv/contact-info)
          ]]]]))

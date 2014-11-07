@@ -2,7 +2,7 @@
  * styles for buttons
  */
 button
-.button
+.btn
   text-transform: uppercase;
   padding: 1em 1.5em;
   font-family: inherit;
@@ -10,9 +10,17 @@ button
   &:hover
     transition: background-color 1s;
 
-.button
-.button:hover
-.button:active
-.button:focus
+.btn
+.btn:hover
+.btn:active
+.btn:focus
   outline: none;
   box-shadow: none;
+
+
+.btn.btn-primary
+  background-color: $orange-color;
+  color: $violet-color!important;
+  background-image: none;
+  &:hover
+    border-color: $orange-color;

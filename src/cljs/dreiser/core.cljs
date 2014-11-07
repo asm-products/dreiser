@@ -100,7 +100,7 @@
   (reify
     om/IRender
     (render [_]
-      (dom/div #js {:className "small-8 small-centered columns start-panel"}
+      (dom/div #js {:className "col-xs-8 center-block start-panel"}
         (dom/div #js {:className "text-center"}
           (dom/h3 nil "Thanks for joining!")
           (dom/h4 nil "We are going to automatically proof-read your Shopify text content.")
@@ -115,7 +115,7 @@
 
 
 (defn render-pricing-block [plan]
-  (dom/ul #js {:className "pricing-table columns large-4 medium-4 small-12 fly-in-animation"}
+  (dom/ul #js {:className "pricing-table col-xs-12 col-md-4 fly-in-animation"}
     (dom/li #js {:className "title"} (:name plan))
     (dom/li #js {:className "description"}
         (dom/strong nil "check")
@@ -138,7 +138,7 @@
     (render [_]
       (dom/div #js {:className "pricing-block white-block"}
           (dom/div #js {:className "row"}
-              (dom/header #js {:className "text-center columns small-12"}
+              (dom/header #js {:className "text-center col-xs-12"}
                           (dom/h2 nil "Pricing")
                           (dom/p nil "Please select your plan. We have 30 days money back guarantee."))
         (apply dom/div nil
@@ -172,7 +172,7 @@
             link (build-shopify-link shopname resource)]
       (dom/li #js {:className "resource-report"}
               (dom/div nil
-               (dom/span #js {:className "alert label right" :title "Number of warnings"} num-of-errors)
+               (dom/span #js {:className "label label-warning pull-right" :title "Number of warnings"} num-of-errors)
                (dom/h4 nil
                  (dom/a #js {:href link
                              :dangerouslySetInnerHTML #js {:__html (:title resource)}} ))
@@ -189,17 +189,9 @@
             )(:reports (get (:reports app) type-key)))))
 
 (defn render-tab-header [app tab-id tab-name type-key total-key]
-  (dom/a #js {:href tab-id}
-   (dom/h3 nil tab-name)
-   (dom/div #js {:className "row"}
-     (dom/div #js {:className "columns small-6"}
-       (dom/strong nil (get (:shop app) total-key))
-       (dom/br nil)
-       (dom/span nil "items"))
-     (dom/div #js {:className "columns small-6"}
-       (dom/strong nil (:num-of-errors (get (:reports app) type-key)))
-       (dom/br nil)
-       (dom/span nil "warnings")))))
+  (dom/a #js {:href tab-id :data-toggle "tab"}
+   (dom/span nil tab-name)
+   (dom/span #js {:className "badge"} (:num-of-errors (get (:reports app) type-key)))))
 
 (defn reports-groups
   "Component that renders reports"
@@ -207,35 +199,38 @@
   (reify
     om/IRender
     (render [_]
-      (dom/div #js {:className "small-12 columns"}
-        (dom/div #js {:className "row"}
-          (dom/div #js {:className "small-12 columns"}
-              (dom/dl #js {:data-tab "" :className "tabs"}
-                (dom/dd #js {:className "active"}
-                  (render-tab-header app "#products-report" "Products" :product :products-num))
-                (dom/dd nil
-                  (render-tab-header app "#pages-report" "Pages" :page :pages-num))
-                (dom/dd nil
-                  (render-tab-header app "#articles-report" "Articles" :article :articles-num)))
+        (dom/div #js {:className "col-xs-12"}
+            (dom/ul #js {:className "nav nav-pills"}
+              (dom/li #js {:className "active"}
+                (render-tab-header app "#products-report" "Products" :product :products-num))
+              (dom/li nil
+                (render-tab-header app "#pages-report" "Pages" :page :pages-num))
+              (dom/li nil
+                (render-tab-header app "#articles-report" "Articles" :article :articles-num)))
 
-           (dom/div #js {:className "tabs-content"}
-              (dom/div #js {:id "products-report" :className "content active"}
-                (dom/div #js {:className "alert-box"} "Below are the list of products' descriptions with possible errors. Please review them")
-                (render-reports-list :product app))
-              (dom/div #js {:id "pages-report" :className "content"}
-                (if (or (= (:plan (:shop app)) "large") (= (:plan (:shop app)) "extra"))
+         (dom/div #js {:className "tab-content"}
+            (dom/div #js {:id "products-report" :className "tab-pane active"}
+              (dom/div #js {:className "alert alert-warning"}
+                 (dom/p nil "Below are the list of products' descriptions with possible errors. Please review them"))
+              (render-reports-list :product app))
+            (dom/div #js {:id "pages-report" :className "tab-pane"}
+              (if (or (= (:plan (:shop app)) "large") (= (:plan (:shop app)) "extra"))
+                (do
+                  (dom/div #js {:className "alert alert-warning"}
+                           (dom/p nil "Below are the list of pages' contents with possible errors. Please review them"))
+                  (render-reports-list :page app))
+                (dom/div #js {:className "alert alert-warning"}
+                         (dom/p nil "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your pages content"))))
+
+            (dom/div #js {:id "articles-report" :className "tab-pane"}
+              (if (= (:plan (:shop app)) "extra")
                   (do
-                    (dom/div #js {:className "alert-box"} "Below are the list of pages' contents with possible errors. Please review them")
-                    (render-reports-list :page app))
-                  (dom/p #js {:className "alert-box"} "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your pages content")))
-
-              (dom/div #js {:id "articles-report" :className "content"}
-                (if (= (:plan (:shop app)) "extra")
-                    (do
-                      (dom/div #js {:className "alert-box"} "Below are the list of blog posts' contents with possible errors. Please review them")
-                      (render-reports-list :article app))
-                     (dom/p #js {:className "alert-box"} "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your blog posts content"))
-                       ))))))))
+                    (dom/div #js {:className "alert alert-warning"}
+                             (dom/p nil "Below are the list of blog posts' contents with possible errors. Please review them"))
+                    (render-reports-list :article app))
+                   (dom/div #js {:className "alert alert-warning"}
+                            (dom/p nil "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your blog posts content")))
+                     ))))))
 
 (defn reports-view
   "Component that renders reports"
@@ -271,7 +266,7 @@
                         (om/transact! app :shop (fn [_] e)))}))
     om/IDidUpdate
     (did-update [_ _ _]
-                (. (js/jQuery js/document) foundation))
+                (. (js/jQuery "[data-toggle=\"popover\"]") popover (js-obj "html" true "placement" "bottom")))
     om/IRender
     (render [this]
       (dom/div #js {:className "container"}
@@ -279,6 +274,5 @@
                (om/build reports-view app)
 
                ))))
-
 (om/root dreiser-app app-state
   {:target (. js/document (getElementById "app"))})

@@ -1,17 +1,43 @@
 @import "nib"
-@import "./normalize.css"
-@import "./foundation.min.css"
+@import "./bootstrap.min.css"
 @import "./nprogress.css"
 @import "./init.styl"
+@import "./button.styl"
 
 
+.navbar-inverse
+  background-color: $violet-color;
 
-/*!
- * base styles for the page. Override some foundation defaults
- */
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+  background-color: $violet-color;
+
+
+.navbar-inverse .navbar-nav>li>a
+  color: $orange-color;
+
+.navbar-inverse .navbar-brand
+  color: $orange-color;
+
+
+.alert.alert-warning
+  background-color: $orange-color;
+  color: $body-text
+
+#nprogress
+  & .bar
+    background: $orange-color!important;
+  & .spinner-icon
+    border-top-color: $orange-color!important;
+    border-left-color: $orange-color!important;
+
+
+.navbar-brand
+  font-size: 1.4em;
+  font-family: 'Playfair Display',serif;
 
 *
   text-rendering: initial!important;
+
 
 body
   color: $body-text;
@@ -46,100 +72,87 @@ a
     opacity: 0.8;
     transition: opacity 0.3s;
 
-
-/*!
- * basic icons styles
- */
-i
-  transition: opacity 0.3s;
-  opacity: 1;
-  &:hover
-    opacity: 0.7;
-    transition: opacity 0.3s;
-  &.large
-    font-size: 3rem;
-    color: $heading-text;
-    display: block;
-    margin-bottom: 1rem;
-    transition: margin-top 0.3s;
-    &:hover
-      margin-top: -10px;
-      transition: margin-top 0.3s;
-
 ul
 ol
   list-style: none;
   margin: 0;
-
-
-body > section
-body > header
-body > footer
-  max-width: 100%;
-  & > .row
-    max-width: $max-width;
-    margin: 0 auto;
-
-body > section
-  padding: 3.75em 0 2em;
-  & header > p
-    margin-bottom: 3rem;
-
-  // if section is divided on columns
-  & > .row .columns
-
-    & > h3
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
+  padding: 0;
 
 
 
-// icons
-
-ul
-ol
-  &.large
-    & > li
-      & i
-        margin: 0 10px 0 0;
-        font-size: 1.2em;
 
 
+// landing page start
 
-.text-uppercase
-  text-transform: uppercase;
+.landing-page
 
+  & .jumbotron
+    background-image: url('/hero.jpg');
+    margin: 0;
 
-
-/*!
- * header section
- */
-header.header
-  border-top: 5px solid $menu-color;
-  border-bottom: none;
-  background: transparent;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-header.mobile-header
-  border-bottom: 5px solid $menu-color;
+    & h1
+    & p
+      color: $orange-color;
+      text-shadow: 0 0 18px #191326;
+    & h1
+      font-family: 'Playfair Display', serif;
+      font-size: 3.4rem;
 
 
-/*!
- * footer section
- */
-.main-footer
-  & ul:not(.inline-list)
-    & li
-      margin-bottom: 0.8rem;
+  & .fluid-container
+    margin: 0;
+    &.orange
+      background-color: $orange-color;
+      & h2
+      & h3
+        color: $violet-color;
+    &.light-grey
+      background-color: $light-grey;
+      & h2
+        color: $violet-color;
+    &.white
+      & h2
+        color: $violet-color;
+
+// landing page end
 
 
 
-@import "./button.styl"
-
-@import "./foundation/pricing.styl"
-@import "./foundation/dropdown.styl"
-@import "./foundation/subnav.styl"
+.resource-report
+  margin-bottom: 3.0rem;
 
 
-@import "./dreiser.styl"
+  & h4
+    margin-bottom: 1.1rem;
+    font-weight: bold;
+
+
+
+.nav.nav-pills
+  & li
+    width: 33%;
+    text-align: center;
+
+
+  & a.list-group-item.active>.badge, .nav-pills>.active>a>.badge
+    color: $orange-color;
+
+.alert
+  color: white;
+
+.check-wrong-word
+  background-color: $orange-color;
+  padding: 3px 2px;
+
+
+
+.report-content
+  display: block;
+  overflow: auto;
+  position: relative;
+  min-height: 100px;
+
+
+
+.report-property-content
+  font-weight: 300;
