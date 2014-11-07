@@ -25,35 +25,37 @@
      (cv/ga)
      ]
     [:body.landing-page
-     [:div.row.hero.block
-      [:img {:src "/hero.jpg"}]
-      [:a.btn.btn-primary.btn-sm.login-button {:href "/login"} "Log In"]
-      [:a.btn.btn-primary.btn-sm.contact-button {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]
-      [:div.logo-block
-       [:p.big-logo "Dreiser"]
-       [:p "Proofread your texts"]]]
-     [:div.row.orange.block
-      [:header.col-md-12.center-block
+     [:div.fluid-container
+       [:div.jumbotron
+         [:div.row
+           [:div.col-xs-12.col-md-8.col-md-offset-2
+             [:h1 "Dreiser"]
+             [:p "Proofread your texts"]
+             [:a.btn.btn-primary.btn-sm.login-button {:href "/login"} "Log In"]
+             [:a.btn.btn-primary.btn-sm.contact-button {:href "mailto:dreiser@helpful.io" :data-helpful "dreiser"} "Contact us"]]
+          ]]]
+     [:div.row.orange.fluid-container
+      [:header.col-xs-12.col-md-8.col-md-offset-2
         [:h2 "How it works"]]
-      [:div.col-xs-12.col-md-8
+      [:div.col-xs-12.col-md-8.col-md-offset-2
           [:p "<strong>Dreiser</strong> is service for proofreading you text content.
            We can scan and find potential grammar & spelling
            mistakes in your products descriptions, blog posts and web pages."]
           [:p "Every day we will check all your content and send report with potential problems via email."]]]
-     [:div.row.white.block
-      [:header.col-xs-12
+     [:div.row.white.fluid-container
+      [:header.col-xs-12.col-md-8.col-md-offset-2
        [:h2 "Why do you need it"]]
-      [:div.col-xs-12.col-md-8
+      [:div.col-xs-12.col-md-8.col-md-offset-2
        [:ul
         [:li "Avoid stupid mistakes in your text. Customers like quality.
          Everything you do should be perfect: your products, your logo, payment experience and ... text on your site and blog."]
         [:li "Mistakes in text may cause some problem with ranking in Google. Customers wouldn't be able to find your products because of the simple typos"]]]]
-     [:div.light-grey.block
+     [:div.light-grey.fluid-container
        [:div.row
-         [:header.col-xs-12
+         [:header.col-xs-12.col-md-8.col-md-offset-2
            [:h2 "How to use it"]
            [:p "Get first check result just in few minutes"]]
-         [:div.col-xs-12.col-md-8
+         [:div.col-xs-12.col-md-8.col-md-offset-2
            [:ul
             [:li
              [:h4 "Create account"]
@@ -65,9 +67,7 @@
               [:h4 "Press Start button"]
               [:p "First check result will be availbe just in few minutes. You will receive reports from us couple times per week on you email."]]
           ]]
-         [:div.col-md-6
-          [:img {:src "/screen1.png"}]]]
+        ]
       ]
-     (cv/all-pricing)
      (cv/footer)]))
 

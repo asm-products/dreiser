@@ -2,6 +2,7 @@
 @import "./bootstrap.min.css"
 @import "./nprogress.css"
 @import "./init.styl"
+@import "./button.styl"
 
 
 .navbar-inverse
@@ -30,6 +31,9 @@
     border-left-color: $orange-color!important;
 
 
+
+*
+  text-rendering: initial!important;
 
 
 body
@@ -74,6 +78,40 @@ ol
 
 
 
+
+// landing page start
+
+.landing-page
+
+  & .jumbotron
+    background-image: url('/hero.jpg');
+    margin: 0;
+
+    & h1
+    & p
+      color: $orange-color;
+      text-shadow: 0 0 18px #191326;
+    & h1
+      font-family: 'Playfair Display', serif;
+      font-size: 3.4rem;
+
+
+  & .fluid-container
+    margin: 0;
+    &.orange
+      background-color: $orange-color;
+      & h2
+      & h3
+        color: $violet-color;
+    &.light-grey
+      background-color: $light-grey;
+      & h2
+        color: $violet-color;
+    &.white
+      & h2
+        color: $violet-color;
+
+// landing page end
 
 
 
