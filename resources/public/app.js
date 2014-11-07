@@ -21688,16 +21688,16 @@ dreiser.core.start_check_button_click = function(a) {
   }], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "file", "file", 1017047278), "/Users/podviaznikov/assembly/dreiser/src/cljs/dreiser/core.cljs"], null)));
 };
 dreiser.core.start_check_button = function start_check_button(b, c) {
-  "undefined" === typeof dreiser.core.t9016 && (dreiser.core.t9016 = function(b, c, f, g) {
+  "undefined" === typeof dreiser.core.t9226 && (dreiser.core.t9226 = function(b, c, f, g) {
     this.owner = b;
     this.app = c;
     this.start_check_button = f;
-    this.meta9017 = g;
+    this.meta9227 = g;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, dreiser.core.t9016.cljs$lang$type = !0, dreiser.core.t9016.cljs$lang$ctorStr = "dreiser.core/t9016", dreiser.core.t9016.cljs$lang$ctorPrWriter = function(b, c, f) {
-    return cljs.core._write.call(null, c, "dreiser.core/t9016");
-  }, dreiser.core.t9016.prototype.om$core$IRender$ = !0, dreiser.core.t9016.prototype.om$core$IRender$render$arity$1 = function(b) {
+  }, dreiser.core.t9226.cljs$lang$type = !0, dreiser.core.t9226.cljs$lang$ctorStr = "dreiser.core/t9226", dreiser.core.t9226.cljs$lang$ctorPrWriter = function(b, c, f) {
+    return cljs.core._write.call(null, c, "dreiser.core/t9226");
+  }, dreiser.core.t9226.prototype.om$core$IRender$ = !0, dreiser.core.t9226.prototype.om$core$IRender$render$arity$1 = function(b) {
     var c = this;
     return React.DOM.div({className:"col-xs-8 center-block start-panel"}, React.DOM.div({className:"text-center"}, React.DOM.h3(null, "Thanks for joining!"), React.DOM.h4(null, "We are going to automatically proof-read your Shopify text content."), React.DOM.p(null, "Select language, press Start Check and comeback in few minutes."), cljs.core.apply.call(null, om.dom.select, null, cljs.core.map.call(null, function(b) {
       return function(b, c) {
@@ -21708,14 +21708,14 @@ dreiser.core.start_check_button = function start_check_button(b, c) {
         return dreiser.core.start_check_button_click.call(null, c.app);
       };
     }(this), className:"button success", id:"start-check-button"}, "Start check")));
-  }, dreiser.core.t9016.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta9017;
-  }, dreiser.core.t9016.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new dreiser.core.t9016(this.owner, this.app, this.start_check_button, c);
-  }, dreiser.core.__GT_t9016 = function(b, c, f, g) {
-    return new dreiser.core.t9016(b, c, f, g);
+  }, dreiser.core.t9226.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta9227;
+  }, dreiser.core.t9226.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new dreiser.core.t9226(this.owner, this.app, this.start_check_button, c);
+  }, dreiser.core.__GT_t9226 = function(b, c, f, g) {
+    return new dreiser.core.t9226(b, c, f, g);
   });
-  return new dreiser.core.t9016(c, b, start_check_button, null);
+  return new dreiser.core.t9226(c, b, start_check_button, null);
 };
 dreiser.core.render_pricing_block = function(a) {
   return React.DOM.ul({className:"pricing-table col-xs-12 col-md-4 fly-in-animation"}, React.DOM.li({className:"title"}, (new cljs.core.Keyword(null, "name", "name", 1017277949)).cljs$core$IFn$_invoke$arity$1(a)), React.DOM.li({className:"description"}, React.DOM.strong(null, "check"), React.DOM.span(null, clojure.string.join.call(null, ", ", (new cljs.core.Keyword(null, "features", "features", 723244975)).cljs$core$IFn$_invoke$arity$1(a)))), React.DOM.li({className:"bullet-item"}, "Daily reports"), 
@@ -21723,42 +21723,42 @@ dreiser.core.render_pricing_block = function(a) {
 };
 dreiser.core.render_all_pricing = function render_all_pricing() {
   cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [dreiser.core.app, dreiser.core.owner], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "file", "file", 1017047278), "/Users/podviaznikov/assembly/dreiser/src/cljs/dreiser/core.cljs"], null));
-  "undefined" === typeof dreiser.core.t9022 && (dreiser.core.t9022 = function(b, c) {
+  "undefined" === typeof dreiser.core.t9232 && (dreiser.core.t9232 = function(b, c) {
     this.render_all_pricing = b;
-    this.meta9023 = c;
+    this.meta9233 = c;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, dreiser.core.t9022.cljs$lang$type = !0, dreiser.core.t9022.cljs$lang$ctorStr = "dreiser.core/t9022", dreiser.core.t9022.cljs$lang$ctorPrWriter = function(b, c, d) {
-    return cljs.core._write.call(null, c, "dreiser.core/t9022");
-  }, dreiser.core.t9022.prototype.om$core$IRender$ = !0, dreiser.core.t9022.prototype.om$core$IRender$render$arity$1 = function(b) {
+  }, dreiser.core.t9232.cljs$lang$type = !0, dreiser.core.t9232.cljs$lang$ctorStr = "dreiser.core/t9232", dreiser.core.t9232.cljs$lang$ctorPrWriter = function(b, c, d) {
+    return cljs.core._write.call(null, c, "dreiser.core/t9232");
+  }, dreiser.core.t9232.prototype.om$core$IRender$ = !0, dreiser.core.t9232.prototype.om$core$IRender$render$arity$1 = function(b) {
     return React.DOM.div({className:"pricing-block white-block"}, React.DOM.div({className:"row"}, React.DOM.header({className:"text-center col-xs-12"}, React.DOM.h2(null, "Pricing"), React.DOM.p(null, "Please select your plan. We have 30 days money back guarantee.")), cljs.core.apply.call(null, om.dom.div, null, cljs.core.map.call(null, function(b) {
       return function(b) {
         return om.core.build.call(null, dreiser.core.render_pricing_block, cljs.core.val.call(null, b));
       };
     }(this), dreiser.core.plans))));
-  }, dreiser.core.t9022.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta9023;
-  }, dreiser.core.t9022.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new dreiser.core.t9022(this.render_all_pricing, c);
-  }, dreiser.core.__GT_t9022 = function(b, c) {
-    return new dreiser.core.t9022(b, c);
+  }, dreiser.core.t9232.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta9233;
+  }, dreiser.core.t9232.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new dreiser.core.t9232(this.render_all_pricing, c);
+  }, dreiser.core.__GT_t9232 = function(b, c) {
+    return new dreiser.core.t9232(b, c);
   });
-  return new dreiser.core.t9022(render_all_pricing, null);
+  return new dreiser.core.t9232(render_all_pricing, null);
 };
 dreiser.core.htmlify_str = function(a) {
   return null == a ? "" : clojure.string.replace.call(null, a, /\n/, "\x3cbr\x3e");
 };
 dreiser.core.resource_report = function resource_report(b, c) {
-  "undefined" === typeof dreiser.core.t9028 && (dreiser.core.t9028 = function(b, c, f, g) {
+  "undefined" === typeof dreiser.core.t9238 && (dreiser.core.t9238 = function(b, c, f, g) {
     this.owner = b;
     this.data = c;
     this.resource_report = f;
-    this.meta9029 = g;
+    this.meta9239 = g;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, dreiser.core.t9028.cljs$lang$type = !0, dreiser.core.t9028.cljs$lang$ctorStr = "dreiser.core/t9028", dreiser.core.t9028.cljs$lang$ctorPrWriter = function(b, c, f) {
-    return cljs.core._write.call(null, c, "dreiser.core/t9028");
-  }, dreiser.core.t9028.prototype.om$core$IRender$ = !0, dreiser.core.t9028.prototype.om$core$IRender$render$arity$1 = function(b) {
+  }, dreiser.core.t9238.cljs$lang$type = !0, dreiser.core.t9238.cljs$lang$ctorStr = "dreiser.core/t9238", dreiser.core.t9238.cljs$lang$ctorPrWriter = function(b, c, f) {
+    return cljs.core._write.call(null, c, "dreiser.core/t9238");
+  }, dreiser.core.t9238.prototype.om$core$IRender$ = !0, dreiser.core.t9238.prototype.om$core$IRender$render$arity$1 = function(b) {
     var c = cljs.core.first.call(null, this.data);
     b = cljs.core.second.call(null, this.data);
     var f = cljs.core.nth.call(null, this.data, 2, cljs.core.with_meta(cljs.core.PersistentVector.EMPTY, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "file", "file", 1017047278), "/Users/podviaznikov/assembly/dreiser/src/cljs/dreiser/core.cljs"], null))), g = cljs.core.nth.call(null, this.data, 3, 0), h = cljs.core.first.call(null, cljs.core.filter.call(null, function(b, c, d, e, f) {
@@ -21770,15 +21770,15 @@ dreiser.core.resource_report = function resource_report(b, c) {
         return cljs.core._EQ_.call(null, "description", cljs.core.first.call(null, b)) || cljs.core._EQ_.call(null, "content", cljs.core.first.call(null, b));
       };
     }(c, b, f, g, h, this), f)), c = dreiser.core.htmlify_str.call(null, cljs.core.second.call(null, c)), f = (new cljs.core.Keyword(null, "shopname", "shopname", 669375987)).cljs$core$IFn$_invoke$arity$1(om.core.get_state.call(null, this.owner)), f = dreiser.core.build_shopify_link.call(null, f, b);
-    return React.DOM.li({className:"resource-report"}, React.DOM.div(null, React.DOM.span({title:"Number of warnings", className:"label label-warning right"}, g), React.DOM.h4(null, React.DOM.a({dangerouslySetInnerHTML:{__html:(new cljs.core.Keyword(null, "title", "title", 1124275658)).cljs$core$IFn$_invoke$arity$1(b)}, href:f})), React.DOM.div({dangerouslySetInnerHTML:{__html:c}, className:"report-property-content"})));
-  }, dreiser.core.t9028.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta9029;
-  }, dreiser.core.t9028.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new dreiser.core.t9028(this.owner, this.data, this.resource_report, c);
-  }, dreiser.core.__GT_t9028 = function(b, c, f, g) {
-    return new dreiser.core.t9028(b, c, f, g);
+    return React.DOM.li({className:"resource-report"}, React.DOM.div(null, React.DOM.span({title:"Number of warnings", className:"label label-warning pull-right"}, g), React.DOM.h4(null, React.DOM.a({dangerouslySetInnerHTML:{__html:(new cljs.core.Keyword(null, "title", "title", 1124275658)).cljs$core$IFn$_invoke$arity$1(b)}, href:f})), React.DOM.div({dangerouslySetInnerHTML:{__html:c}, className:"report-property-content"})));
+  }, dreiser.core.t9238.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta9239;
+  }, dreiser.core.t9238.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new dreiser.core.t9238(this.owner, this.data, this.resource_report, c);
+  }, dreiser.core.__GT_t9238 = function(b, c, f, g) {
+    return new dreiser.core.t9238(b, c, f, g);
   });
-  return new dreiser.core.t9028(c, b, resource_report, null);
+  return new dreiser.core.t9238(c, b, resource_report, null);
 };
 dreiser.core.render_reports_list = function(a, b) {
   return cljs.core.apply.call(null, om.dom.ul, null, cljs.core.map.call(null, function(a) {
@@ -21790,75 +21790,75 @@ dreiser.core.render_tab_header = function(a, b, c, d, e) {
   return React.DOM.a({"data-toggle":"tab", href:b}, React.DOM.span(null, c), React.DOM.span({className:"badge"}, (new cljs.core.Keyword(null, "num-of-errors", "num-of-errors", 1072115212)).cljs$core$IFn$_invoke$arity$1(cljs.core.get.call(null, (new cljs.core.Keyword(null, "reports", "reports", 2108507441)).cljs$core$IFn$_invoke$arity$1(a), d))));
 };
 dreiser.core.reports_groups = function reports_groups(b, c) {
-  "undefined" === typeof dreiser.core.t9034 && (dreiser.core.t9034 = function(b, c, f, g) {
+  "undefined" === typeof dreiser.core.t9244 && (dreiser.core.t9244 = function(b, c, f, g) {
     this.owner = b;
     this.app = c;
     this.reports_groups = f;
-    this.meta9035 = g;
+    this.meta9245 = g;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, dreiser.core.t9034.cljs$lang$type = !0, dreiser.core.t9034.cljs$lang$ctorStr = "dreiser.core/t9034", dreiser.core.t9034.cljs$lang$ctorPrWriter = function(b, c, f) {
-    return cljs.core._write.call(null, c, "dreiser.core/t9034");
-  }, dreiser.core.t9034.prototype.om$core$IRender$ = !0, dreiser.core.t9034.prototype.om$core$IRender$render$arity$1 = function(b) {
+  }, dreiser.core.t9244.cljs$lang$type = !0, dreiser.core.t9244.cljs$lang$ctorStr = "dreiser.core/t9244", dreiser.core.t9244.cljs$lang$ctorPrWriter = function(b, c, f) {
+    return cljs.core._write.call(null, c, "dreiser.core/t9244");
+  }, dreiser.core.t9244.prototype.om$core$IRender$ = !0, dreiser.core.t9244.prototype.om$core$IRender$render$arity$1 = function(b) {
     var c = this;
-    return React.DOM.div({className:"col-xs-12"}, React.DOM.div({className:"row"}, React.DOM.div({className:"col-xs-12"}, React.DOM.ul({className:"nav nav-pills row"}, React.DOM.li({className:"active col-xs-4"}, dreiser.core.render_tab_header.call(null, c.app, "#products-report", "Products", new cljs.core.Keyword(null, "product", "product", 704430177), new cljs.core.Keyword(null, "products-num", "products-num", 2044826383))), React.DOM.li({className:"col-xs-4"}, dreiser.core.render_tab_header.call(null, 
-    c.app, "#pages-report", "Pages", new cljs.core.Keyword(null, "page", "page", 1017337345), new cljs.core.Keyword(null, "pages-num", "pages-num", 1914143087))), React.DOM.li({className:"col-xs-4"}, dreiser.core.render_tab_header.call(null, c.app, "#articles-report", "Articles", new cljs.core.Keyword(null, "article", "article", 4576493672), new cljs.core.Keyword(null, "articles-num", "articles-num", 635993960)))), React.DOM.div({className:"tab-content"}, React.DOM.div({className:"tab-pane active", 
-    id:"products-report"}, React.DOM.div({className:"alert alert-warning"}, React.DOM.p(null, "Below are the list of products' descriptions with possible errors. Please review them")), dreiser.core.render_reports_list.call(null, new cljs.core.Keyword(null, "product", "product", 704430177), c.app)), React.DOM.div({className:"tab-pane", id:"pages-report"}, cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", 
-    "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), "large") || cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), "extra") ? function() {
+    return React.DOM.div({className:"col-xs-12"}, React.DOM.ul({className:"nav nav-pills"}, React.DOM.li({className:"active"}, dreiser.core.render_tab_header.call(null, c.app, "#products-report", "Products", new cljs.core.Keyword(null, "product", "product", 704430177), new cljs.core.Keyword(null, "products-num", "products-num", 2044826383))), React.DOM.li(null, dreiser.core.render_tab_header.call(null, c.app, "#pages-report", "Pages", new cljs.core.Keyword(null, "page", "page", 1017337345), new cljs.core.Keyword(null, 
+    "pages-num", "pages-num", 1914143087))), React.DOM.li(null, dreiser.core.render_tab_header.call(null, c.app, "#articles-report", "Articles", new cljs.core.Keyword(null, "article", "article", 4576493672), new cljs.core.Keyword(null, "articles-num", "articles-num", 635993960)))), React.DOM.div({className:"tab-content"}, React.DOM.div({className:"tab-pane active", id:"products-report"}, React.DOM.div({className:"alert alert-warning"}, React.DOM.p(null, "Below are the list of products' descriptions with possible errors. Please review them")), 
+    dreiser.core.render_reports_list.call(null, new cljs.core.Keyword(null, "product", "product", 704430177), c.app)), React.DOM.div({className:"tab-pane", id:"pages-report"}, cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), "large") || cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, 
+    "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), "extra") ? function() {
       React.DOM.div({className:"alert alert-warning"}, React.DOM.p(null, "Below are the list of pages' contents with possible errors. Please review them"));
       return dreiser.core.render_reports_list.call(null, new cljs.core.Keyword(null, "page", "page", 1017337345), c.app);
     }() : React.DOM.div({className:"alert alert-warning"}, React.DOM.p(null, "You are on the ", (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), " plan. Please upgrade to get report about your pages content"))), React.DOM.div({className:"tab-pane", id:"articles-report"}, cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, 
     "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), "extra") ? function() {
       React.DOM.div({className:"alert alert-warning"}, React.DOM.p(null, "Below are the list of blog posts' contents with possible errors. Please review them"));
       return dreiser.core.render_reports_list.call(null, new cljs.core.Keyword(null, "article", "article", 4576493672), c.app);
-    }() : React.DOM.div({className:"alert alert-warning"}, React.DOM.p(null, "You are on the ", (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), " plan. Please upgrade to get report about your blog posts content")))))));
-  }, dreiser.core.t9034.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta9035;
-  }, dreiser.core.t9034.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new dreiser.core.t9034(this.owner, this.app, this.reports_groups, c);
-  }, dreiser.core.__GT_t9034 = function(b, c, f, g) {
-    return new dreiser.core.t9034(b, c, f, g);
+    }() : React.DOM.div({className:"alert alert-warning"}, React.DOM.p(null, "You are on the ", (new cljs.core.Keyword(null, "plan", "plan", 1017347739)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(c.app)), " plan. Please upgrade to get report about your blog posts content")))));
+  }, dreiser.core.t9244.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta9245;
+  }, dreiser.core.t9244.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new dreiser.core.t9244(this.owner, this.app, this.reports_groups, c);
+  }, dreiser.core.__GT_t9244 = function(b, c, f, g) {
+    return new dreiser.core.t9244(b, c, f, g);
   });
-  return new dreiser.core.t9034(c, b, reports_groups, null);
+  return new dreiser.core.t9244(c, b, reports_groups, null);
 };
 dreiser.core.reports_view = function reports_view(b, c) {
-  "undefined" === typeof dreiser.core.t9040 && (dreiser.core.t9040 = function(b, c, f, g) {
+  "undefined" === typeof dreiser.core.t9250 && (dreiser.core.t9250 = function(b, c, f, g) {
     this.owner = b;
     this.app = c;
     this.reports_view = f;
-    this.meta9041 = g;
+    this.meta9251 = g;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, dreiser.core.t9040.cljs$lang$type = !0, dreiser.core.t9040.cljs$lang$ctorStr = "dreiser.core/t9040", dreiser.core.t9040.cljs$lang$ctorPrWriter = function(b, c, f) {
-    return cljs.core._write.call(null, c, "dreiser.core/t9040");
-  }, dreiser.core.t9040.prototype.om$core$IRender$ = !0, dreiser.core.t9040.prototype.om$core$IRender$render$arity$1 = function(b) {
+  }, dreiser.core.t9250.cljs$lang$type = !0, dreiser.core.t9250.cljs$lang$ctorStr = "dreiser.core/t9250", dreiser.core.t9250.cljs$lang$ctorPrWriter = function(b, c, f) {
+    return cljs.core._write.call(null, c, "dreiser.core/t9250");
+  }, dreiser.core.t9250.prototype.om$core$IRender$ = !0, dreiser.core.t9250.prototype.om$core$IRender$render$arity$1 = function(b) {
     return React.DOM.div({className:"row"}, null != (new cljs.core.Keyword(null, "shopify_id", "shopify_id", 4791527206)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(this.app)) ? null == (new cljs.core.Keyword(null, "charge_id", "charge_id", 2583680504)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "shop", "shop", 1017433704)).cljs$core$IFn$_invoke$arity$1(this.app)) ? om.core.build.call(null, dreiser.core.render_all_pricing, 
     this.app) : cljs.core.empty_QMARK_.call(null, (new cljs.core.Keyword(null, "reports", "reports", 2108507441)).cljs$core$IFn$_invoke$arity$1(this.app)) || cljs.core.empty_QMARK_.call(null, (new cljs.core.Keyword(null, "reports", "reports", 2108507441)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "product", "product", 704430177)).cljs$core$IFn$_invoke$arity$1((new cljs.core.Keyword(null, "reports", "reports", 2108507441)).cljs$core$IFn$_invoke$arity$1(this.app)))) ? om.core.build.call(null, 
     dreiser.core.start_check_button, this.app) : om.core.build.call(null, dreiser.core.reports_groups, this.app) : null);
-  }, dreiser.core.t9040.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta9041;
-  }, dreiser.core.t9040.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new dreiser.core.t9040(this.owner, this.app, this.reports_view, c);
-  }, dreiser.core.__GT_t9040 = function(b, c, f, g) {
-    return new dreiser.core.t9040(b, c, f, g);
+  }, dreiser.core.t9250.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta9251;
+  }, dreiser.core.t9250.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new dreiser.core.t9250(this.owner, this.app, this.reports_view, c);
+  }, dreiser.core.__GT_t9250 = function(b, c, f, g) {
+    return new dreiser.core.t9250(b, c, f, g);
   });
-  return new dreiser.core.t9040(c, b, reports_view, null);
+  return new dreiser.core.t9250(c, b, reports_view, null);
 };
 dreiser.core.dreiser_app = function dreiser_app(b, c) {
-  "undefined" === typeof dreiser.core.t9047 && (dreiser.core.t9047 = function(b, c, f, g) {
+  "undefined" === typeof dreiser.core.t9257 && (dreiser.core.t9257 = function(b, c, f, g) {
     this.owner = b;
     this.app = c;
     this.dreiser_app = f;
-    this.meta9048 = g;
+    this.meta9258 = g;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, dreiser.core.t9047.cljs$lang$type = !0, dreiser.core.t9047.cljs$lang$ctorStr = "dreiser.core/t9047", dreiser.core.t9047.cljs$lang$ctorPrWriter = function(b, c, f) {
-    return cljs.core._write.call(null, c, "dreiser.core/t9047");
-  }, dreiser.core.t9047.prototype.om$core$IRender$ = !0, dreiser.core.t9047.prototype.om$core$IRender$render$arity$1 = function(b) {
+  }, dreiser.core.t9257.cljs$lang$type = !0, dreiser.core.t9257.cljs$lang$ctorStr = "dreiser.core/t9257", dreiser.core.t9257.cljs$lang$ctorPrWriter = function(b, c, f) {
+    return cljs.core._write.call(null, c, "dreiser.core/t9257");
+  }, dreiser.core.t9257.prototype.om$core$IRender$ = !0, dreiser.core.t9257.prototype.om$core$IRender$render$arity$1 = function(b) {
     return React.DOM.div({className:"container"}, om.core.build.call(null, dreiser.core.reports_view, this.app));
-  }, dreiser.core.t9047.prototype.om$core$IDidUpdate$ = !0, dreiser.core.t9047.prototype.om$core$IDidUpdate$did_update$arity$3 = function(b, c, f) {
+  }, dreiser.core.t9257.prototype.om$core$IDidUpdate$ = !0, dreiser.core.t9257.prototype.om$core$IDidUpdate$did_update$arity$3 = function(b, c, f) {
     return jQuery(document).foundation();
-  }, dreiser.core.t9047.prototype.om$core$IWillMount$ = !0, dreiser.core.t9047.prototype.om$core$IWillMount$will_mount$arity$1 = function(b) {
+  }, dreiser.core.t9257.prototype.om$core$IWillMount$ = !0, dreiser.core.t9257.prototype.om$core$IWillMount$will_mount$arity$1 = function(b) {
     var c = this;
     dreiser.core.start_progress.call(null);
     dreiser.core.edn_xhr.call(null, cljs.core.with_meta(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "method", "method", 4231316563), new cljs.core.Keyword(null, "get", "get", 1014006472), new cljs.core.Keyword(null, "url", "url", 1014020321), "/reports", new cljs.core.Keyword(null, "on-complete", "on-complete", 2943599833), function(b) {
@@ -21880,13 +21880,13 @@ dreiser.core.dreiser_app = function dreiser_app(b, c) {
         }(b));
       };
     }(this)], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "file", "file", 1017047278), "/Users/podviaznikov/assembly/dreiser/src/cljs/dreiser/core.cljs"], null)));
-  }, dreiser.core.t9047.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta9048;
-  }, dreiser.core.t9047.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new dreiser.core.t9047(this.owner, this.app, this.dreiser_app, c);
-  }, dreiser.core.__GT_t9047 = function(b, c, f, g) {
-    return new dreiser.core.t9047(b, c, f, g);
+  }, dreiser.core.t9257.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta9258;
+  }, dreiser.core.t9257.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new dreiser.core.t9257(this.owner, this.app, this.dreiser_app, c);
+  }, dreiser.core.__GT_t9257 = function(b, c, f, g) {
+    return new dreiser.core.t9257(b, c, f, g);
   });
-  return new dreiser.core.t9047(c, b, dreiser_app, null);
+  return new dreiser.core.t9257(c, b, dreiser_app, null);
 };
 om.core.root.call(null, dreiser.core.dreiser_app, dreiser.core.app_state, cljs.core.with_meta(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", "target", 4427965699), document.getElementById("app")], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "file", "file", 1017047278), "/Users/podviaznikov/assembly/dreiser/src/cljs/dreiser/core.cljs"], null)));

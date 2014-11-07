@@ -172,7 +172,7 @@
             link (build-shopify-link shopname resource)]
       (dom/li #js {:className "resource-report"}
               (dom/div nil
-               (dom/span #js {:className "label label-warning right" :title "Number of warnings"} num-of-errors)
+               (dom/span #js {:className "label label-warning pull-right" :title "Number of warnings"} num-of-errors)
                (dom/h4 nil
                  (dom/a #js {:href link
                              :dangerouslySetInnerHTML #js {:__html (:title resource)}} ))
@@ -199,40 +199,38 @@
   (reify
     om/IRender
     (render [_]
-      (dom/div #js {:className "col-xs-12"}
-        (dom/div #js {:className "row"}
-          (dom/div #js {:className "col-xs-12"}
-              (dom/ul #js {:className "nav nav-pills row"}
-                (dom/li #js {:className "active col-xs-4"}
-                  (render-tab-header app "#products-report" "Products" :product :products-num))
-                (dom/li #js {:className "col-xs-4"}
-                  (render-tab-header app "#pages-report" "Pages" :page :pages-num))
-                (dom/li #js {:className "col-xs-4"}
-                  (render-tab-header app "#articles-report" "Articles" :article :articles-num)))
+        (dom/div #js {:className "col-xs-12"}
+            (dom/ul #js {:className "nav nav-pills"}
+              (dom/li #js {:className "active"}
+                (render-tab-header app "#products-report" "Products" :product :products-num))
+              (dom/li nil
+                (render-tab-header app "#pages-report" "Pages" :page :pages-num))
+              (dom/li nil
+                (render-tab-header app "#articles-report" "Articles" :article :articles-num)))
 
-           (dom/div #js {:className "tab-content"}
-              (dom/div #js {:id "products-report" :className "tab-pane active"}
+         (dom/div #js {:className "tab-content"}
+            (dom/div #js {:id "products-report" :className "tab-pane active"}
+              (dom/div #js {:className "alert alert-warning"}
+                 (dom/p nil "Below are the list of products' descriptions with possible errors. Please review them"))
+              (render-reports-list :product app))
+            (dom/div #js {:id "pages-report" :className "tab-pane"}
+              (if (or (= (:plan (:shop app)) "large") (= (:plan (:shop app)) "extra"))
+                (do
+                  (dom/div #js {:className "alert alert-warning"}
+                           (dom/p nil "Below are the list of pages' contents with possible errors. Please review them"))
+                  (render-reports-list :page app))
                 (dom/div #js {:className "alert alert-warning"}
-                   (dom/p nil "Below are the list of products' descriptions with possible errors. Please review them"))
-                (render-reports-list :product app))
-              (dom/div #js {:id "pages-report" :className "tab-pane"}
-                (if (or (= (:plan (:shop app)) "large") (= (:plan (:shop app)) "extra"))
+                         (dom/p nil "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your pages content"))))
+
+            (dom/div #js {:id "articles-report" :className "tab-pane"}
+              (if (= (:plan (:shop app)) "extra")
                   (do
                     (dom/div #js {:className "alert alert-warning"}
-                             (dom/p nil "Below are the list of pages' contents with possible errors. Please review them"))
-                    (render-reports-list :page app))
-                  (dom/div #js {:className "alert alert-warning"}
-                           (dom/p nil "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your pages content"))))
-
-              (dom/div #js {:id "articles-report" :className "tab-pane"}
-                (if (= (:plan (:shop app)) "extra")
-                    (do
-                      (dom/div #js {:className "alert alert-warning"}
-                               (dom/p nil "Below are the list of blog posts' contents with possible errors. Please review them"))
-                      (render-reports-list :article app))
-                     (dom/div #js {:className "alert alert-warning"}
-                              (dom/p nil "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your blog posts content")))
-                       ))))))))
+                             (dom/p nil "Below are the list of blog posts' contents with possible errors. Please review them"))
+                    (render-reports-list :article app))
+                   (dom/div #js {:className "alert alert-warning"}
+                            (dom/p nil "You are on the " (:plan (:shop app)) " plan. Please upgrade to get report about your blog posts content")))
+                     ))))))
 
 (defn reports-view
   "Component that renders reports"
