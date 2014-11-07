@@ -1,12 +1,81 @@
 @import "nib"
 @import "./bootstrap.min.css"
 @import "./nprogress.css"
+@import "./init.styl"
 
+
+.navbar-inverse
+  background-color: $violet-color;
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+  background-color: $violet-color;
+
+
+.navbar-inverse .navbar-nav>li>a
+  color: $orange-color;
+
+.navbar-inverse .navbar-brand
+  color: $orange-color;
+
+
+.alert.alert-warning
+  background-color: $orange-color;
+  color: $body-text
+
+#nprogress
+  & .bar
+    background: $orange-color!important;
+  & .spinner-icon
+    border-top-color: $orange-color!important;
+    border-left-color: $orange-color!important;
+
+
+
+
+body
+  color: $body-text;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+
+
+h1
+h2
+h3
+h4
+h5
+h6
+  color: $heading-text;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1;
+  text-rendering: initial!important;
+
+
+/*!
+ * basic link styles
+ */
+a
+  color: $link-color;
+  transition: opacity 0.3s;
+  &:visited
+    color: $link-color;
+  &:hover
+    color: $link-color;
+    opacity: 0.8;
+    transition: opacity 0.3s;
 
 ul
 ol
   list-style: none;
   margin: 0;
+  padding: 0;
+
+
+
+
+
+
 
 .resource-report
   margin-bottom: 3.0rem;
@@ -22,3 +91,27 @@ ol
   & li
     width: 33%;
     text-align: center;
+
+
+  & a.list-group-item.active>.badge, .nav-pills>.active>a>.badge
+    color: $orange-color;
+
+.alert
+  color: white;
+
+.check-wrong-word
+  background-color: $orange-color;
+  padding: 3px 2px;
+
+
+
+.report-content
+  display: block;
+  overflow: auto;
+  position: relative;
+  min-height: 100px;
+
+
+
+.report-property-content
+  font-weight: 300;

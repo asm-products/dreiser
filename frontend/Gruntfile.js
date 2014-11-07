@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         files: {
-          '../resources/public/js/vendor.js': ['js/jquery.js', 'js/foundation.min.js', 'js/nprogress.js'],
+          '../resources/public/js/vendor.js': ['js/jquery.js', 'js/nprogress.js'],
         }
       }
     },

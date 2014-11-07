@@ -266,7 +266,7 @@
                         (om/transact! app :shop (fn [_] e)))}))
     om/IDidUpdate
     (did-update [_ _ _]
-                (. (js/jQuery js/document) foundation))
+                (. (js/jQuery "[data-toggle=\"popover\"]") popover (js-obj "html" true "placement" "bottom")))
     om/IRender
     (render [this]
       (dom/div #js {:className "container"}
@@ -274,6 +274,5 @@
                (om/build reports-view app)
 
                ))))
-
 (om/root dreiser-app app-state
   {:target (. js/document (getElementById "app"))})
