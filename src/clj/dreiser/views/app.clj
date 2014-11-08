@@ -23,7 +23,7 @@
       [:div {:id "app"}]
       ;; implement easy support option. Maybe online chat
       ;(cv/about)
-      (include-js "https://fb.me/react-0.9.0.js")
+      (include-js "https://fb.me/react-0.11.1.js")
       ;(include-js "/out/goog/base.js")
       (include-js "app.js")
       ;[:script
