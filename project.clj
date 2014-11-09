@@ -24,8 +24,8 @@
                  [cheshire "5.3.1"]
                  [amazonica "0.2.29"]
                  [lein-light-nrepl "0.0.19"]
-                 [org.clojure/clojurescript "0.0-2202"]
-                 [om "0.6.4"]
+                 [org.clojure/clojurescript "0.0-2371"]
+                 [om "0.7.3"]
                  [fogus/ring-edn "0.2.0"]
                  [org.jsoup/jsoup "1.8.1"]]
   :repl-options {:nrepl-middleware [lighttable.nrepl.handler/lighttable-ops]}

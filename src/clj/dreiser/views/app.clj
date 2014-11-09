@@ -9,7 +9,6 @@
   (html5 {:lang "en"}
     [:head
       [:meta {:charset "UTF-8"}]
-      [:meta {:name "author" :content "Hashobject Ltd <team@hashobject.com>"}]
       [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
       [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]
       [:link {:href "/favicon.png" :rel "shortcut icon"}]
@@ -25,7 +24,7 @@
       [:div {:id "app"}]
       ;; implement easy support option. Maybe online chat
       ;(cv/about)
-      (include-js "https://fb.me/react-0.9.0.js")
+      (include-js "https://fb.me/react-0.11.1.js")
       ;(include-js "/out/goog/base.js")
       (include-js "app.js")
       ;[:script

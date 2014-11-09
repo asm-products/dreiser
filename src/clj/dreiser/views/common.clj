@@ -83,7 +83,7 @@
 (defn login-form []
   [:form.login-form {:action "/auth/shopify" :role "form"}
     [:div.form-group
-      [:input.control-label {:type "text" :name "shop" :placeholder "yourshop.myshopify.com" :value ""}]]
+      [:input.form-control {:type "text" :name "shop" :placeholder "yourshop.myshopify.com" :value ""}]]
     [:div.form-group
       [:div
         [:button.btn.btn-primary.right(:type "submit") "Log In"]]]])

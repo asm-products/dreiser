@@ -98,8 +98,8 @@
   "Component that renders 'Start check' button"
   [app owner]
   (reify
-    om/IRender
-    (render [_]
+    om/IRenderState
+    (render-state [_ _]
       (dom/div #js {:className "col-xs-8 center-block start-panel"}
         (dom/div #js {:className "text-center"}
           (dom/h3 nil "Thanks for joining!")
@@ -134,8 +134,8 @@
 (defn render-all-pricing []
   [app owner]
   (reify
-    om/IRender
-    (render [_]
+    om/IRenderState
+    (render-state [_ _]
       (dom/div #js {:className "pricing-block white-block"}
           (dom/div #js {:className "row"}
               (dom/header #js {:className "text-center col-xs-12"}
@@ -143,7 +143,8 @@
                           (dom/p nil "Please select your plan. We have 30 days money back guarantee."))
         (apply dom/div nil
              (map (fn [plan]
-                    (om/build render-pricing-block (val plan))
+                    ;(dom/div nil "hello")
+                    (render-pricing-block (val plan))
                     ) plans)))))))
 
 (defn htmlify-str [s]
@@ -155,8 +156,8 @@
   ""
   [data owner]
   (reify
-    om/IRender
-    (render [_]
+    om/IRenderState
+    (render-state [_ _]
       (let [resource-id (first data)
             resource (second data)
             reports (nth data 2 [])
@@ -197,8 +198,8 @@
   "Component that renders reports"
   [app owner]
   (reify
-    om/IRender
-    (render [_]
+    om/IRenderState
+    (render-state [_ _]
         (dom/div #js {:className "col-xs-12"}
             (dom/ul #js {:className "nav nav-pills"}
               (dom/li #js {:className "active"}
@@ -236,8 +237,8 @@
   "Component that renders reports"
   [app owner]
   (reify
-    om/IRender
-    (render [_]
+    om/IRenderState
+    (render-state [_ _]
         (dom/div #js {:className "row"}
           (if (not (nil? (:shopify_id (:shop app))))
             (if (nil? (:charge_id (:shop app)))
@@ -267,12 +268,12 @@
     om/IDidUpdate
     (did-update [_ _ _]
                 (. (js/jQuery "[data-toggle=\"popover\"]") popover (js-obj "html" true "placement" "bottom")))
-    om/IRender
-    (render [this]
+    om/IRenderState
+    (render-state [_ _]
       (dom/div #js {:className "container"}
-
                (om/build reports-view app)
-
                ))))
-(om/root dreiser-app app-state
-  {:target (. js/document (getElementById "app"))})
+(om/root
+   dreiser-app
+   app-state
+   {:target (. js/document (getElementById "app"))})

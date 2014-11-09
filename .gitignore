@@ -4,3 +4,4 @@ target/
 .nrepl-port
 .lein-repl-history
 frontend/node_modules/
+resources/public/out/*
