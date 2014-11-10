@@ -67,8 +67,7 @@
                "DB_USER" "podviaznikov"
                "DB_PASSWORD" ""
                "DB_SUBNAME" "//localhost:5432/dreiser"
-               "CHARGE_TYPE" "test"}
-          :dependencies []}
+               "CHARGE_TYPE" "test"}}
     :prod {
           :ring {:open-browser? false, :stacktraces? false, :auto-reload? false}}
     :staging {

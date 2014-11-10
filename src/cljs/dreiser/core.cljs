@@ -242,7 +242,7 @@
         (dom/div #js {:className "row"}
           (if (not (nil? (:shopify_id (:shop app))))
             (if (nil? (:charge_id (:shop app)))
-              (om/build render-all-pricing app)
+              ;(om/build render-all-pricing app)
               (if (or (empty? (:reports app)) (empty? (:reports (:product (:reports app)))))
                 (om/build start-check-button app)
                 (om/build reports-groups app))
