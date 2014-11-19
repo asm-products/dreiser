@@ -1,0 +1,38 @@
+/* TEAM */
+
+
+Core Team: Anton Podviaznikov
+Contact: anton [at] podviaznikov.com
+GitHub: @podviaznikov
+From: San Francisco, CA, United States
+
+Core Team: Maryna Aleksandrova
+Contact: hello [at] marynaaleksandrova.info
+GitHub: @marynaaleksandrova
+From: San Francisco, CA, United States
+
+
+
+/* SITE */
+Last update: 2014/11/19
+Standards: HTML5, CSS3
+Components: Clojure, PostgreSQL etc.
+Software: Leiningen, Gulp.js, Git, etc.
+Language: English
+Doctype: HTML5
+
+
+  _____  _____  ______ _____  _____ ______ _____
+ |  __ \|  __ \|  ____|_   _|/ ____|  ____|  __ \
+ | |  | | |__) | |__    | | | (___ | |__  | |__) |
+ | |  | |  _  /|  __|   | |  \___ \|  __| |  _  /
+ | |__| | | \ \| |____ _| |_ ____) | |____| | \ \
+ |_____/|_|  \_\______|_____|_____/|______|_|  \_\
+
+
+
+Dreiser is automatic proofreading tool.
+
+We're an open-source company on Assembly. Contribute to Dreiser to earn a stake in the company.
+
+Join our chat room at https://assembly.com/dreiser.
