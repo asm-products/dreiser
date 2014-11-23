@@ -37,7 +37,6 @@ To compile ClojureScript into JavaScript in the new window run command
 
 ```
   lein cljsbuild auto
-
 ```
 
 You can change your ClojureScript code and it will compiled to JavaScript automatically in the background.
