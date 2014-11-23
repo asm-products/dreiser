@@ -1,6 +1,6 @@
 # Dreiser
 
-[![Dependencies Status](http://jarkeeper.com/asm-products/dreiser/status.png)](http://jarkeeper.com/asm-products/dreiser)
+[![Dependencies Status](http://jarkeeper.com/asm-products/dreiser/status.svg)](http://jarkeeper.com/asm-products/dreiser)
 
 ## Find grammar and spelling mistakes everywhere
 
