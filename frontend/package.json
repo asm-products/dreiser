@@ -3,9 +3,6 @@
 	"title": "dreiser.co",
 	"version": "1.0.0",
 	"private": true,
-	"scripts": {
-		"deploy": "nvm use 0.8.26;grunt deploy"
-	},
 	"dependencies": {},
 	"devDependencies": {
 		"gulp": "^3.8.10",

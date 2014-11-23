@@ -41,9 +41,9 @@ To compile ClojureScript into JavaScript in the new window run command
 
 You can change your ClojureScript code and it will compiled to JavaScript automatically in the background.
 
-To compile Stylus into CSS please navigate to the `frontend` directory. Install node.js dependencies and grunt using `npm install` command.
+To compile Stylus into CSS please navigate to the `frontend` directory. Install node.js dependencies and Gulp.js using `npm install` command.
 
-Then run `grunt watch` in the separate window and your CSS will be compiled automatically.
+Then run `gulp watch` in the separate window and your CSS will be compiled automatically.
 
 
 ### Server setup
