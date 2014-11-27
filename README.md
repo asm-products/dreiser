@@ -1,5 +1,6 @@
 # Dreiser
 
+[![Build Status](https://travis-ci.org/asm-products/dreiser.svg?branch=master)](https://travis-ci.org/asm-products/dreiser)
 [![Dependencies Status](http://jarkeeper.com/asm-products/dreiser/status.svg)](http://jarkeeper.com/asm-products/dreiser)
 
 ## Find grammar and spelling mistakes everywhere
