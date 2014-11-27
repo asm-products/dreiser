@@ -22,7 +22,7 @@
                  [hiccup "1.0.5"]
                  [overtone/at-at "1.2.0"]
                  [cheshire "5.3.1"]
-                 [amazonica "0.2.30"]
+                 [amazonica "0.3.1"]
                  [lein-light-nrepl "0.1.0"]
                  [org.clojure/clojurescript "0.0-2371"]
                  [om "0.7.3"]
@@ -58,7 +58,6 @@
     :dev {:env {
                "SES_ACCESS_KEY" ""
                "SES_SECRET_KEY" ""
-
                "AWS_ACCESS_KEY_ID" ""
                "AWS_SECRET_KEY" ""
                "APP_BASE_URL" "http://localhost:3000"
